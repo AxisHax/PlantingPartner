@@ -3,7 +3,7 @@ using Planting_Partner.Services;
 /*
 *
 *  This is the entry point for the app.
-*  TESTING BRANCH RULES.
+*
 */
 namespace Planting_Partner
 {
