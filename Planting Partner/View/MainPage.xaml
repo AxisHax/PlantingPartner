@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:Planting_Partner.ViewModel"
+             x:DataType="viewmodel:PlantsViewModel"
+             Title="{Binding Title}"
              x:Class="Planting_Partner.MainPage">
 
     <ScrollView>
@@ -27,6 +30,17 @@
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
                 FontSize="18"
                 HorizontalOptions="Center" />
+
+            <StackLayout RadioButtonGroup.GroupName="Ligma"
+                         HorizontalOptions="Center">
+                <Label Text="Do you have ligma?"
+                       FontSize="18"/>
+                <RadioButton x:Name="Q1_Radio0" Value="Yes" Content="Yes"/>
+                <RadioButton x:Name="Q1_Radio1" Value="No" Content="No"/>
+                <RadioButton x:Name="Q1_Radio2" Value="Maybe" Content="Maybe so..."/>
+            </StackLayout>
+
+            <Label x:Name="LigmaLabel" IsVisible="False"/>
 
             <Button
                 x:Name="CounterBtn"
