@@ -4,9 +4,10 @@
     {
         int count = 0;
 
-        public MainPage()
+        public MainPage(PlantsViewModel viewModel)
         {
             InitializeComponent();
+            BindingContext = viewModel;
         }
 
         private void OnCounterClicked(object sender, EventArgs e)

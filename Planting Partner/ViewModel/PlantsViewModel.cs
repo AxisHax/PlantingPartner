@@ -8,5 +8,9 @@ namespace Planting_Partner.ViewModel
 {
     public partial class PlantsViewModel : BaseViewModel
     {
+        public PlantsViewModel()
+        {
+            Title = "Planting Partner";
+        }
     }
 }
