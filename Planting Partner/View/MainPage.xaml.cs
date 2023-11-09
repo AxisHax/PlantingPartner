@@ -1,25 +1,49 @@
-﻿namespace Planting_Partner
+namespace Planting_Partner
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
         public MainPage(PlantsViewModel viewModel)
         {
             InitializeComponent();
             BindingContext = viewModel;
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private void OnSubmitClicked(object sender, EventArgs e)
         {
-            count++;
+            ErrorMessageLbl.Text = string.Empty;
+            ErrorMessageLbl.IsVisible = false;
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
+            //Validate user input
+            bool userInputIsValid = ValidateUserInput();
+
+            if (userInputIsValid)
+            {
+                //Once this is clicked, store user input for climate for later
+                Climate climate = new Climate();
+                climate.CurrentSeason = (string)SeasonPicker.SelectedItem;
+
+                //This is where we move to next screen
+            }
+        }
+
+        //There will likely be a better way to do this once more input is added to starting screen
+        private bool ValidateUserInput()
+        {
+            //Make sure input made by users is valid
+            if (SeasonPicker.SelectedItem == null) 
+            {
+                ErrorMessageLbl.Text = "You must enter a value for the current season.";
+            }
+
+            if (ErrorMessageLbl.Text != string.Empty)
+            {
+                ErrorMessageLbl.IsVisible = true;
+                return false;
+            }
             else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            {
+                return true;
+            }
         }
     }
 }
