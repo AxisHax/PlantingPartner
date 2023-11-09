@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodel="clr-namespace:Planting_Partner.ViewModel"
@@ -17,36 +17,41 @@
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="200"
                 HorizontalOptions="Center" />
+            <HorizontalStackLayout
+                Spacing="10"
+                HorizontalOptions="Center">
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
+                <Label 
+                    Text="Pick the current season: "
+                    VerticalOptions="Center"
+                    FontSize="18" />
+
+                <Picker x:Name="SeasonPicker"
+                    HorizontalOptions="Center">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Summer</x:String>
+                            <x:String>Fall</x:String>
+                            <x:String>Winter</x:String>
+                            <x:String>Spring</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+            </HorizontalStackLayout>
+
+            <Label 
+                x:Name="ErrorMessageLbl"
+                Text=""
+                TextColor="Red"
+                IsVisible="False" 
                 HorizontalOptions="Center" />
-
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
-
-            <StackLayout RadioButtonGroup.GroupName="Ligma"
-                         HorizontalOptions="Center">
-                <Label Text="Do you have ligma?"
-                       FontSize="18"/>
-                <RadioButton x:Name="Q1_Radio0" Value="Yes" Content="Yes"/>
-                <RadioButton x:Name="Q1_Radio1" Value="No" Content="No"/>
-                <RadioButton x:Name="Q1_Radio2" Value="Maybe" Content="Maybe so..."/>
-            </StackLayout>
-
-            <Label x:Name="LigmaLabel" IsVisible="False"/>
 
             <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
+                x:Name="SubmitBtn"
+                Text="Submit"
+                SemanticProperties.Hint="Submits the values entered regarding the climate"
+                Clicked="OnSubmitClicked"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>
