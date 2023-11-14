@@ -27,8 +27,10 @@ namespace Planting_Partner
             builder.Services.AddSingleton<PlantService>();
 
             builder.Services.AddSingleton<PlantsViewModel>();
+            builder.Services.AddTransient<PlantDetailsViewModel>();
 
             builder.Services.AddSingleton<MainPage>();
+            builder.Services.AddTransient<DetailsPage>();
 
             return builder.Build();
         }

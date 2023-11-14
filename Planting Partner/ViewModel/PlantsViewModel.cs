@@ -12,5 +12,11 @@ namespace Planting_Partner.ViewModel
         {
             Title = "Planting Partner";
         }
+
+        [RelayCommand]
+        async Task GoToDetailsAsync()
+        {
+            await Shell.Current.GoToAsync($"{nameof(DetailsPage)}", true);
+        }
     }
 }

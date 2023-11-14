@@ -45,5 +45,13 @@ namespace Planting_Partner
                 return true;
             }
         }
+
+        private void SeasonPicker_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(SeasonPicker.SelectedIndex != -1)
+            {
+                SubmitBtn.IsEnabled = true;
+            }
+        }
     }
 }
