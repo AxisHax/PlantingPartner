@@ -27,7 +27,8 @@
                     FontSize="18" />
 
                 <Picker x:Name="SeasonPicker"
-                    HorizontalOptions="Center">
+                        HorizontalOptions="Center"
+                        SelectedIndexChanged="SeasonPicker_SelectedIndexChanged">
                     <Picker.ItemsSource>
                         <x:Array Type="{x:Type x:String}">
                             <x:String>Summer</x:String>
@@ -50,9 +51,14 @@
             <Button
                 x:Name="SubmitBtn"
                 Text="Submit"
+                IsEnabled="False"
                 SemanticProperties.Hint="Submits the values entered regarding the climate"
-                Clicked="OnSubmitClicked"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center">
+                <Button.GestureRecognizers>
+                    <TapGestureRecognizer CommandParameter="{Binding .}"
+                                          Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PlantsViewModel}}, Path=GoToDetailsCommand}"/>
+                </Button.GestureRecognizers>
+            </Button>
 
         </VerticalStackLayout>
     </ScrollView>
