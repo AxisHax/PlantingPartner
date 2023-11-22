@@ -46,12 +46,32 @@ namespace Planting_Partner
             }
         }
 
+        private bool seasonSelected = false;
+        private bool zoneSelected = false; 
         private void SeasonPicker_SelectedIndexChanged(object sender, EventArgs e)
         {
             if(SeasonPicker.SelectedIndex != -1)
             {
-                SubmitBtn.IsEnabled = true;
+                SelectedOptions.SetSeason(SeasonPicker.SelectedItem.ToString());
+                seasonSelected = true;
             }
+            EnableSubmitBtnCheck();
+        }
+
+        private void ZonePicker_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(ZonePicker.SelectedIndex != -1)
+            {
+                SelectedOptions.SetZone(ZonePicker.SelectedItem.ToString());
+                zoneSelected = true;
+            }
+            EnableSubmitBtnCheck();
+        }
+
+        private void EnableSubmitBtnCheck()
+        {
+            if (seasonSelected is true && zoneSelected is true)
+                SubmitBtn.IsEnabled = true;
         }
     }
 }

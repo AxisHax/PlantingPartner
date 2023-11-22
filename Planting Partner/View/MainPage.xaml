@@ -17,30 +17,52 @@
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="200"
                 HorizontalOptions="Center" />
-            <HorizontalStackLayout
-                Spacing="10"
-                HorizontalOptions="Center">
 
-                <Label 
-                    Text="Pick the current season: "
-                    VerticalOptions="Center"
-                    FontSize="18" />
+            <VerticalStackLayout Spacing="20">
+                <HorizontalStackLayout
+                    Spacing="10"
+                    HorizontalOptions="CenterAndExpand">
 
-                <Picker x:Name="SeasonPicker"
-                        HorizontalOptions="Center"
-                        SelectedIndexChanged="SeasonPicker_SelectedIndexChanged">
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>Summer</x:String>
-                            <x:String>Fall</x:String>
-                            <x:String>Winter</x:String>
-                            <x:String>Spring</x:String>
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker>
+                    <Label 
+                        Text="Pick the current season: "
+                        VerticalOptions="Center"
+                        FontSize="18" />
 
-            </HorizontalStackLayout>
+                    <Picker x:Name="SeasonPicker"
+                            HorizontalOptions="Center"
+                            SelectedIndexChanged="SeasonPicker_SelectedIndexChanged">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Summer</x:String>
+                                <x:String>Fall</x:String>
+                                <x:String>Winter</x:String>
+                                <x:String>Spring</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
 
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout Spacing="10"
+                                       HorizontalOptions="Center">
+                    <Label Text="Pick your climate zone: "
+                           VerticalOptions="CenterAndExpand"
+                           FontSize="18"/>
+
+                    <Picker x:Name="ZonePicker"
+                            HorizontalOptions="Center"
+                            SelectedIndexChanged="ZonePicker_SelectedIndexChanged">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>6a</x:String>
+                                <x:String>6b</x:String>
+                                <x:String>7a</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+            
             <Label 
                 x:Name="ErrorMessageLbl"
                 Text=""

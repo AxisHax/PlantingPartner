@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using Planting_Partner.Services;
+using Planting_Partner.View;
 /*
 *
 *  This is the entry point for the app.
@@ -28,6 +29,7 @@ namespace Planting_Partner
 
             builder.Services.AddSingleton<PlantsViewModel>();
             builder.Services.AddTransient<PlantDetailsViewModel>();
+            builder.Services.AddTransient<PlantCollection>();
 
             builder.Services.AddSingleton<MainPage>();
             builder.Services.AddTransient<DetailsPage>();

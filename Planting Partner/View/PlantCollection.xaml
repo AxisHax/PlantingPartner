@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Planting_Partner.View.PlantCollection"
+             xmlns:model="clr-namespace:Planting_Partner.Model"
+             Title="PlantCollection">
+    <CollectionView>
+        <CollectionView.ItemsSource>
+            <x:Array Type="{x:Type model:Plant}">
+                <model:Plant
+                    Name="Green Tomatoes"
+                    Image="https://www.thespruceeats.com/thmb/9i5KyQFH650K47jx9Q8bhTHFuGo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Tomatillos-5894ee9a5f9b5874ee3ac471.jpg"
+                    GrowSeason="Summer" />
+                <model:Plant
+                    Name="Tobacco"
+                    Image="https://upload.wikimedia.org/wikipedia/commons/f/f4/DunhillEarlyMorningPipeMurrays.jpg"
+                    GrowSeason="Spring" />
+                <model:Plant
+                    Name="Basil"
+                    Image="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/topic_centers/Food-Nutrition/1296x728_Holy_Basil.jpg"
+                    GrowSeason="Fall" />
+            </x:Array>
+        </CollectionView.ItemsSource>
+        <CollectionView.ItemTemplate>
+            <DataTemplate x:DataType="model:Plant">
+                <HorizontalStackLayout Padding="10">
+                    <Image
+                    Aspect="AspectFill"
+                    HeightRequest="100"
+                    Source="{Binding Image}"
+                    WidthRequest="100" />
+                    <Label VerticalOptions="Center" TextColor="Gray">
+                        <Label.Text>
+                            <MultiBinding StringFormat="{}{0} | {1}">
+                                <Binding Path="Name" />
+                                <Binding Path="GrowSeason" />
+                            </MultiBinding>
+                        </Label.Text>
+                    </Label>
+                </HorizontalStackLayout>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</ContentPage>

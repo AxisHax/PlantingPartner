@@ -1,4 +1,6 @@
-﻿namespace Planting_Partner
+﻿using Planting_Partner.View;
+
+namespace Planting_Partner
 {
     public partial class AppShell : Shell
     {
@@ -6,6 +8,7 @@
         {
             InitializeComponent();
             Routing.RegisterRoute(nameof(DetailsPage), typeof(DetailsPage));
+            Routing.RegisterRoute(nameof(PlantCollection), typeof(PlantCollection));
         }
     }
 }
