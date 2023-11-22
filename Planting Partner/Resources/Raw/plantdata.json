@@ -1,0 +1,23 @@
+[
+  {
+    "Name": "Green Tomato",
+    "Image": "c:/insert/filepath/here",
+    "Description": "green tomatoes are a summertime favorite. These plants grow on a vine, and output can be improved by wrapping the vine vertically on a stake, to encourage growth.",
+    "GrowthZone": "6a",
+    "GrowSeason": "Summer"
+  },
+  {
+    "Name": "Tobacco",
+    "Image": "c:/insert/filepath/here",
+    "Description": "Smoke this shit to get blitzed as fuck.",
+    "GrowthZone": "6b",
+    "GrowSeason": "Spring"
+  },
+  {
+    "Name": "Basil",
+    "Image": "c:/insert/filepath/here",
+    "Description": "This plant is a perrinial. It'll regrow for years to come. Yummy with tomatoes.'",
+    "GrowthZone": "7a",
+    "GrowSeason": "Summer"
+  }
+ ]
