@@ -3,42 +3,56 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Planting_Partner.View.PlantCollection"
              xmlns:model="clr-namespace:Planting_Partner.Model"
-             Title="PlantCollection">
-    <CollectionView>
-        <CollectionView.ItemsSource>
-            <x:Array Type="{x:Type model:Plant}">
-                <model:Plant
-                    Name="Green Tomatoes"
-                    Image="https://www.thespruceeats.com/thmb/9i5KyQFH650K47jx9Q8bhTHFuGo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Tomatillos-5894ee9a5f9b5874ee3ac471.jpg"
-                    GrowSeason="Summer" />
-                <model:Plant
-                    Name="Tobacco"
-                    Image="https://upload.wikimedia.org/wikipedia/commons/f/f4/DunhillEarlyMorningPipeMurrays.jpg"
-                    GrowSeason="Spring" />
-                <model:Plant
-                    Name="Basil"
-                    Image="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/topic_centers/Food-Nutrition/1296x728_Holy_Basil.jpg"
-                    GrowSeason="Fall" />
-            </x:Array>
-        </CollectionView.ItemsSource>
-        <CollectionView.ItemTemplate>
-            <DataTemplate x:DataType="model:Plant">
-                <HorizontalStackLayout Padding="10">
+             xmlns:viewmodel="clr-namespace:Planting_Partner.ViewModel"
+             x:DataType="viewmodel:PlantCollectionViewModel"
+             Title="Plant Collection">
+    
+    <Grid
+        ColumnDefinitions="*,*"
+        ColumnSpacing="5"
+        RowDefinitions="*,Auto"
+        RowSpacing="0">
+
+        <CollectionView ItemsSource="{Binding Plants}"
+                        SelectionMode="None"
+                        Grid.ColumnSpan="2">
+            <CollectionView.EmptyView>
+                <StackLayout Padding="100">
                     <Image
-                    Aspect="AspectFill"
-                    HeightRequest="100"
-                    Source="{Binding Image}"
-                    WidthRequest="100" />
-                    <Label VerticalOptions="Center" TextColor="Gray">
-                        <Label.Text>
-                            <MultiBinding StringFormat="{}{0} | {1}">
-                                <Binding Path="Name" />
-                                <Binding Path="GrowSeason" />
-                            </MultiBinding>
-                        </Label.Text>
-                    </Label>
-                </HorizontalStackLayout>
-            </DataTemplate>
-        </CollectionView.ItemTemplate>
-    </CollectionView>
+                            HorizontalOptions="Center"
+                            Source="nodata.png"
+                            HeightRequest="160"
+                            WidthRequest="160"
+                            VerticalOptions="Center"/>
+                </StackLayout>
+            </CollectionView.EmptyView>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:Plant">
+                    <Grid Padding="10">
+                        <Frame HeightRequest="125" BackgroundColor="#1B1B1B">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer 
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PlantCollectionViewModel}}, Path=GoToDetailsCommand}"
+                                        CommandParameter="{Binding .}"/>
+                            </Frame.GestureRecognizers>
+                            <Grid Padding="0" ColumnDefinitions="125,*">
+                                <Image Aspect="AspectFill" Source="{Binding Image}"
+                                       WidthRequest="125"
+                                       HeightRequest="125"/>
+                                <VerticalStackLayout
+                                    Grid.Column="1"
+                                    VerticalOptions="Center"
+                                    Padding="10">
+                                    <Label TextColor="white" Text="{Binding Name}" />
+                                    <Label TextColor="white" Text="{Binding GrowthZone}" />
+                                    <Label TextColor="white" Text="{Binding GrowSeason}" />
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Frame>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </Grid>
 </ContentPage>

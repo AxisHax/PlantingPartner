@@ -2,10 +2,10 @@ namespace Planting_Partner;
 
 public partial class DetailsPage : ContentPage
 {
-	public DetailsPage(/*PlantDetailsViewModel viewModel*/)
+	public DetailsPage(PlantDetailsViewModel viewModel)
 	{
 		InitializeComponent();
-		//BindingContext = viewModel;
+		BindingContext = viewModel;
 	}
 
     protected override void OnNavigatedTo(NavigatedToEventArgs args)

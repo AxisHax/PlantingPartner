@@ -29,6 +29,7 @@
                         FontSize="18" />
 
                     <Picker x:Name="SeasonPicker"
+                            TextColor="Gray"
                             HorizontalOptions="Center"
                             SelectedIndexChanged="SeasonPicker_SelectedIndexChanged">
                         <Picker.ItemsSource>

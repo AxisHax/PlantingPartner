@@ -8,43 +8,43 @@ namespace Planting_Partner
             BindingContext = viewModel;
         }
 
-        private void OnSubmitClicked(object sender, EventArgs e)
-        {
-            ErrorMessageLbl.Text = string.Empty;
-            ErrorMessageLbl.IsVisible = false;
+        //private void OnSubmitClicked(object sender, EventArgs e)
+        //{
+        //    ErrorMessageLbl.Text = string.Empty;
+        //    ErrorMessageLbl.IsVisible = false;
 
-            //Validate user input
-            bool userInputIsValid = ValidateUserInput();
+        //    //Validate user input
+        //    bool userInputIsValid = ValidateUserInput();
 
-            if (userInputIsValid)
-            {
-                //Once this is clicked, store user input for climate for later
-                Climate climate = new Climate();
-                climate.CurrentSeason = (string)SeasonPicker.SelectedItem;
+        //    if (userInputIsValid)
+        //    {
+        //        //Once this is clicked, store user input for climate for later
+        //        Climate climate = new Climate();
+        //        climate.CurrentSeason = (string)SeasonPicker.SelectedItem;
 
-                //This is where we move to next screen
-            }
-        }
+        //        //This is where we move to next screen
+        //    }
+        //}
 
-        //There will likely be a better way to do this once more input is added to starting screen
-        private bool ValidateUserInput()
-        {
-            //Make sure input made by users is valid
-            if (SeasonPicker.SelectedItem == null) 
-            {
-                ErrorMessageLbl.Text = "You must enter a value for the current season.";
-            }
+        ////There will likely be a better way to do this once more input is added to starting screen
+        //private bool ValidateUserInput()
+        //{
+        //    //Make sure input made by users is valid
+        //    if (SeasonPicker.SelectedItem == null) 
+        //    {
+        //        ErrorMessageLbl.Text = "You must enter a value for the current season.";
+        //    }
 
-            if (ErrorMessageLbl.Text != string.Empty)
-            {
-                ErrorMessageLbl.IsVisible = true;
-                return false;
-            }
-            else
-            {
-                return true;
-            }
-        }
+        //    if (ErrorMessageLbl.Text != string.Empty)
+        //    {
+        //        ErrorMessageLbl.IsVisible = true;
+        //        return false;
+        //    }
+        //    else
+        //    {
+        //        return true;
+        //    }
+        //}
 
         private bool seasonSelected = false;
         private bool zoneSelected = false; 
