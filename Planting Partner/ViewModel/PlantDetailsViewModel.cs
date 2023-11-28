@@ -1,7 +1,12 @@
 ﻿
 namespace Planting_Partner.ViewModel
 {
-    public class PlantDetailsViewModel : BaseViewModel
+    [QueryProperty(nameof(Plant), "Plant")]
+    public partial class PlantDetailsViewModel : BaseViewModel
     {
+        public PlantDetailsViewModel() { }
+
+        [ObservableProperty]
+        Plant plant;
     }
 }

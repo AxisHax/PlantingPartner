@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Planting_Partner.View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,8 +16,16 @@ namespace Planting_Partner.ViewModel
 
         [RelayCommand]
         async Task GoToDetailsAsync()
-        {
-            await Shell.Current.GoToAsync($"{nameof(DetailsPage)}", true);
+        {// Navigate to Collection Page and get plants from there.
+            try
+            {
+                await Shell.Current.GoToAsync($"{nameof(PlantCollection)}", true);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Fatal error occured: {ex.Message}");
+                await Shell.Current.DisplayAlert("Error!", ex.Message, "OK");
+            }
         }
     }
 }

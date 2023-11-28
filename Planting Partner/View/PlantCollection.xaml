@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Planting_Partner.View.PlantCollection"
+             xmlns:model="clr-namespace:Planting_Partner.Model"
+             xmlns:viewmodel="clr-namespace:Planting_Partner.ViewModel"
+             x:DataType="viewmodel:PlantCollectionViewModel"
+             Title="Plant Collection">
+    
+    <Grid
+        ColumnDefinitions="*,*"
+        ColumnSpacing="5"
+        RowDefinitions="*,Auto"
+        RowSpacing="0">
+
+        <CollectionView ItemsSource="{Binding Plants}"
+                        SelectionMode="None"
+                        Grid.ColumnSpan="2">
+            <CollectionView.EmptyView>
+                <StackLayout Padding="100">
+                    <Image
+                            HorizontalOptions="Center"
+                            Source="nodata.png"
+                            HeightRequest="160"
+                            WidthRequest="160"
+                            VerticalOptions="Center"/>
+                </StackLayout>
+            </CollectionView.EmptyView>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:Plant">
+                    <Grid Padding="10">
+                        <Frame HeightRequest="125" BackgroundColor="#1B1B1B">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer 
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PlantCollectionViewModel}}, Path=GoToDetailsCommand}"
+                                        CommandParameter="{Binding .}"/>
+                            </Frame.GestureRecognizers>
+                            <Grid Padding="0" ColumnDefinitions="125,*">
+                                <Image Aspect="AspectFill" Source="{Binding Image}"
+                                       WidthRequest="125"
+                                       HeightRequest="125"/>
+                                <VerticalStackLayout
+                                    Grid.Column="1"
+                                    VerticalOptions="Center"
+                                    Padding="10">
+                                    <Label TextColor="white" Text="{Binding Name}" />
+                                    <Label TextColor="white" Text="{Binding GrowthZone}" />
+                                    <Label TextColor="white" Text="{Binding GrowSeason}" />
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Frame>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </Grid>
+</ContentPage>

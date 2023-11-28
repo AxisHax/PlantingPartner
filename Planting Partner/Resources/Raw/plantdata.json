@@ -1,0 +1,23 @@
+[
+  {
+    "Name": "Green Tomato",
+    "Image": "https://www.thespruceeats.com/thmb/9i5KyQFH650K47jx9Q8bhTHFuGo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Tomatillos-5894ee9a5f9b5874ee3ac471.jpg",
+    "Description": "green tomatoes are a summertime favorite. These plants grow on a vine, and output can be improved by wrapping the vine vertically on a stake, to encourage growth.",
+    "GrowthZone": "6a",
+    "GrowSeason": "Summer"
+  },
+  {
+    "Name": "Tobacco",
+    "Image": "https://upload.wikimedia.org/wikipedia/commons/f/f4/DunhillEarlyMorningPipeMurrays.jpg",
+    "Description": "Smoke this shit to get blitzed as fuck.",
+    "GrowthZone": "6b",
+    "GrowSeason": "Spring"
+  },
+  {
+    "Name": "Basil",
+    "Image": "https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/topic_centers/Food-Nutrition/1296x728_Holy_Basil.jpg?w=1155&h=1528",
+    "Description": "This plant is a perrinial. It'll regrow for years to come. Yummy with tomatoes.'",
+    "GrowthZone": "7a",
+    "GrowSeason": "Summer"
+  }
+ ]
