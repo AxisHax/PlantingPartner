@@ -18,9 +18,10 @@
                         Grid.ColumnSpan="2">
             <CollectionView.EmptyView>
                 <StackLayout Padding="100">
-                    <Label TextColor="White"
-                           VerticalOptions="Center"
-                           HorizontalOptions="Center"
+                    <Label TextColor="Black"
+                           FontAttributes="Bold"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="CenterAndExpand"
                            Text="There are no plants that match the search criteria."/>
                 </StackLayout>
             </CollectionView.EmptyView>
