@@ -1,5 +1,33 @@
 [
   {
+    "Name": "Lettuce",
+    "Image": "https://healthjade.com/wp-content/uploads/2017/11/romaine-lettuce.jpg",
+    "Description": "Lettuce plants are grown in cooler months, typically in the spring or fall. The soil temperature should stay between 45 and 65 degrees F, So make sure to bring your lettuce inside if the weather is around these bounds for a few days. ",
+    "GrowthZone": "7a",
+    "GrowSeason": "Spring"
+  },
+  {
+    "Name": "Lettuce",
+    "Image": "https://healthjade.com/wp-content/uploads/2017/11/romaine-lettuce.jpg",
+    "Description": "Lettuce plants are grown in cooler months, typically in the spring or fall. The soil temperature should stay between 45 and 65 degrees F, So make sure to bring your lettuce inside if the weather is around these bounds for a few days. ",
+    "GrowthZone": "7a",
+    "GrowSeason": "Fall"
+  },
+  {
+    "Name": "Lettuce",
+    "Image": "https://healthjade.com/wp-content/uploads/2017/11/romaine-lettuce.jpg",
+    "Description": "Lettuce plants are grown in cooler months, typically in the spring or fall. The soil temperature should stay between 45 and 65 degrees F, So make sure to bring your lettuce inside if the weather is around these bounds for a few days. ",
+    "GrowthZone": "6b",
+    "GrowSeason": "Spring"
+  },
+  {
+    "Name": "Lettuce",
+    "Image": "https://healthjade.com/wp-content/uploads/2017/11/romaine-lettuce.jpg",
+    "Description": "Lettuce plants are grown in cooler months, typically in the spring or fall. The soil temperature should stay between 45 and 65 degrees F, So make sure to bring your lettuce inside if the weather is around these bounds for a few days. ",
+    "GrowthZone": "6b",
+    "GrowSeason": "Fall"
+  },
+  {
     "Name": "Green Tomato",
     "Image": "https://www.thespruceeats.com/thmb/9i5KyQFH650K47jx9Q8bhTHFuGo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Tomatillos-5894ee9a5f9b5874ee3ac471.jpg",
     "Description": "green tomatoes are a summertime favorite. These plants grow on a vine, and output can be improved by wrapping the vine vertically on a stake, to encourage growth.",
@@ -7,17 +35,164 @@
     "GrowSeason": "Summer"
   },
   {
+    "Name": "Green Tomato",
+    "Image": "https://www.thespruceeats.com/thmb/9i5KyQFH650K47jx9Q8bhTHFuGo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Tomatillos-5894ee9a5f9b5874ee3ac471.jpg",
+    "Description": "green tomatoes are a summertime favorite. These plants grow on a vine, and output can be improved by wrapping the vine vertically on a stake, to encourage growth.",
+    "GrowthZone": "6a",
+    "GrowSeason": "Spring"
+  },
+  {
+    "Name": "Squash",
+    "Image": "https://pallensmith.com/wp-content/uploads/2015/12/07_36536-web.jpg",
+    "Description": "Squash plants grow best in late Spring, early Summer. They will grow best once outdoor temps are over 65^F. These plants take 60 days to mature, so you’ll have plenty of time to provide it with love and care. ",
+    "GrowthZone": "7a",
+    "GrowSeason": "Summer"
+  },
+  {
+    "Name": "Squash",
+    "Image": "https://pallensmith.com/wp-content/uploads/2015/12/07_36536-web.jpg",
+    "Description": "Squash plants grow best in late Spring, early Summer. They will grow best once outdoor temps are over 65^F. These plants take 60 days to mature, so you’ll have plenty of time to provide it with love and care. ",
+    "GrowthZone": "7a",
+    "GrowSeason": "Spring"
+  },
+  {
+    "Name": "Peppers",
+    "Image": "https://th.bing.com/th/id/OIP.W-M_mbKSTQXr-bQzKXBwOAHaE8?rs=1&pid=ImgDetMain",
+    "Description": "Peppers grow best in the summer, in sunny patches of land. They are susceptible to the cold, so make sure to plant after the avg temp has reached above 65 degrees. Peppers are actually perennials, but Kentucky gets too cold in the winter for them to survive. Bring them indoors in the cold months for a fancy house plant! ",
+    "GrowthZone": "6b",
+    "GrowSeason": "Spring"
+  },
+  {
+    "Name": "Peppers",
+    "Image": "https://th.bing.com/th/id/OIP.W-M_mbKSTQXr-bQzKXBwOAHaE8?rs=1&pid=ImgDetMain",
+    "Description": "Peppers grow best in the summer, in sunny patches of land. They are susceptible to the cold, so make sure to plant after the avg temp has reached above 65 degrees. Peppers are actually perennials, but Kentucky gets too cold in the winter for them to survive. Bring them indoors in the cold months for a fancy house plant! ",
+    "GrowthZone": "7a",
+    "GrowSeason": "Spring"
+  },
+  {
+    "Name": "Peppers",
+    "Image": "https://th.bing.com/th/id/OIP.W-M_mbKSTQXr-bQzKXBwOAHaE8?rs=1&pid=ImgDetMain",
+    "Description": "Peppers grow best in the summer, in sunny patches of land. They are susceptible to the cold, so make sure to plant after the avg temp has reached above 65 degrees. Peppers are actually perennials, but Kentucky gets too cold in the winter for them to survive. Bring them indoors in the cold months for a fancy house plant! ",
+    "GrowthZone": "7a",
+    "GrowSeason": "Summer"
+  },
+  {
+    "Name": "Peppers",
+    "Image": "https://th.bing.com/th/id/OIP.W-M_mbKSTQXr-bQzKXBwOAHaE8?rs=1&pid=ImgDetMain",
+    "Description": "Peppers grow best in the summer, in sunny patches of land. They are susceptible to the cold, so make sure to plant after the avg temp has reached above 65 degrees. Peppers are actually perennials, but Kentucky gets too cold in the winter for them to survive. Bring them indoors in the cold months for a fancy house plant! ",
+    "GrowthZone": "6b",
+    "GrowSeason": "Summer"
+  },
+  {
     "Name": "Tobacco",
     "Image": "https://upload.wikimedia.org/wikipedia/commons/f/f4/DunhillEarlyMorningPipeMurrays.jpg",
-    "Description": "Smoke this shit to get blitzed as fuck.",
+    "Description": "A common cash crop in the state of Kentucky. Plant outside after the last frost of the season, and give it plenty of nutrients.",
     "GrowthZone": "6b",
+    "GrowSeason": "Spring"
+  },
+  {
+    "Name": "Tobacco",
+    "Image": "https://upload.wikimedia.org/wikipedia/commons/f/f4/DunhillEarlyMorningPipeMurrays.jpg",
+    "Description": "A common cash crop in the state of Kentucky. Plant outside after the last frost of the season, and give it plenty of nutrients.",
+    "GrowthZone": "6a",
+    "GrowSeason": "Spring"
+  },
+  {
+    "Name": "Tobacco",
+    "Image": "https://upload.wikimedia.org/wikipedia/commons/f/f4/DunhillEarlyMorningPipeMurrays.jpg",
+    "Description": "A common cash crop in the state of Kentucky. Plant outside after the last frost of the season, and give it plenty of nutrients.",
+    "GrowthZone": "7a",
     "GrowSeason": "Spring"
   },
   {
     "Name": "Basil",
     "Image": "https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/topic_centers/Food-Nutrition/1296x728_Holy_Basil.jpg?w=1155&h=1528",
-    "Description": "This plant is a perrinial. It'll regrow for years to come. Yummy with tomatoes.'",
+    "Description": "This plant will last from late Spring to early Autumn. Usually grown in warm climates, with a minimum temperature around 50^F. It'll die in the winter. Always yummy when enjoyed with tomatoes.'",
     "GrowthZone": "7a",
     "GrowSeason": "Summer"
+  },
+  {
+    "Name": "Basil",
+    "Image": "https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/topic_centers/Food-Nutrition/1296x728_Holy_Basil.jpg?w=1155&h=1528",
+    "Description": "This plant will last from late Spring to early Autumn. Usually grown in warm climates, with a minimum temperature around 50^F. It'll die in the winter. Always yummy when enjoyed with tomatoes.'",
+    "GrowthZone": "7a",
+    "GrowSeason": "Spring"
+  },
+  {
+    "Name": "Cucumber",
+    "Image": "https://upload.wikimedia.org/wikipedia/commons/9/96/ARS_cucumber.jpg",
+    "Description": "This plant is best planted in early Summer, but can sometimes see success when planted mid to late Summer. This plant is great to eat on its own, or make a delicious addition to a salad.",
+    "GrowthZone": "7a",
+    "GrowSeason": "Summer"
+  },
+  {
+    "Name": "Garlic",
+    "Image": "https://www.health.com/thmb/FAT5LSHXPSScbsi50u9EUw22rlo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Garlic-547276b9a356409eacef7284682b594a.jpg",
+    "Description": "This plant will receive the best results if planted in Fall or early Spring. Garlic requires ten weeks of cold weather to develop the separate cloves correctly. Garlic is great on toast and can help fend off unwanted vampires too!",
+    "GrowthZone": "6a",
+    "GrowSeason": "Fall"
+  },
+  {
+    "Name": "Garlic",
+    "Image": "https://www.health.com/thmb/FAT5LSHXPSScbsi50u9EUw22rlo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Garlic-547276b9a356409eacef7284682b594a.jpg",
+    "Description": "This plant will receive the best results if planted in Fall or early Spring. Garlic requires ten weeks of cold weather to develop the separate cloves correctly. Garlic is great on toast and can help fend off unwanted vampires too!",
+    "GrowthZone": "6a",
+    "GrowSeason": "Spring"
+  },
+  {
+    "Name": "Kale",
+    "Image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Boerenkool.jpg/1200px-Boerenkool.jpg",
+    "Description": "Kale is best planted about one month before your last frost date in spring, and about six weeks before your first frost date in fall. Kale is popular among dieters and gym-goers, and makes a great addition to a healthy smoothie.",
+    "GrowthZone": "7a",
+    "GrowSeason": "Spring"
+  },
+  {
+    "Name": "Kale",
+    "Image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Boerenkool.jpg/1200px-Boerenkool.jpg",
+    "Description": "Kale is best planted about one month before your last frost date in spring, and about six weeks before your first frost date in fall. Kale is popular among dieters and gym-goers, and makes a great addition to a healthy smoothie.",
+    "GrowthZone": "7a",
+    "GrowSeason": "Fall"
+  },
+  {
+    "Name": "Okra",
+    "Image": "https://upload.wikimedia.org/wikipedia/commons/9/95/Hong_Kong_Okra_Aug_25_2012.JPG",
+    "Description": "Okra is a warm-season plant, meaning it cannot handle frost. Okra is best planted in Spring after all danger of frost has passed, or in the first part of Fall, before any danger of frost can occur. Okra can be enjoyed fried, pickled, or even raw.",
+    "GrowthZone": "6a",
+    "GrowSeason": "Fall"
+  },
+  {
+    "Name": "Okra",
+    "Image": "https://upload.wikimedia.org/wikipedia/commons/9/95/Hong_Kong_Okra_Aug_25_2012.JPG",
+    "Description": "Okra is a warm-season plant, meaning it cannot handle frost. Okra is best planted in Spring after all danger of frost has passed, or in the first part of Fall, before any danger of frost can occur. Okra can be enjoyed fried, pickled, or even raw.",
+    "GrowthZone": "6b",
+    "GrowSeason": "Fall"
+  },
+  {
+    "Name": "Okra",
+    "Image": "https://upload.wikimedia.org/wikipedia/commons/9/95/Hong_Kong_Okra_Aug_25_2012.JPG",
+    "Description": "Okra is a warm-season plant, meaning it cannot handle frost. Okra is best planted in Spring after all danger of frost has passed, or in the first part of Fall, before any danger of frost can occur. Okra can be enjoyed fried, pickled, or even raw.",
+    "GrowthZone": "7a",
+    "GrowSeason": "Fall"
+  },
+  {
+    "Name": "Okra",
+    "Image": "https://upload.wikimedia.org/wikipedia/commons/9/95/Hong_Kong_Okra_Aug_25_2012.JPG",
+    "Description": "Okra is a warm-season plant, meaning it cannot handle frost. Okra is best planted in Spring after all danger of frost has passed, or in the first part of Fall, before any danger of frost can occur. Okra can be enjoyed fried, pickled, or even raw.",
+    "GrowthZone": "6a",
+    "GrowSeason": "Spring"
+  },
+  {
+    "Name": "Okra",
+    "Image": "https://upload.wikimedia.org/wikipedia/commons/9/95/Hong_Kong_Okra_Aug_25_2012.JPG",
+    "Description": "Okra is a warm-season plant, meaning it cannot handle frost. Okra is best planted in Spring after all danger of frost has passed, or in the first part of Fall, before any danger of frost can occur. Okra can be enjoyed fried, pickled, or even raw.",
+    "GrowthZone": "6b",
+    "GrowSeason": "Spring"
+  },
+  {
+    "Name": "Okra",
+    "Image": "https://upload.wikimedia.org/wikipedia/commons/9/95/Hong_Kong_Okra_Aug_25_2012.JPG",
+    "Description": "Okra is a warm-season plant, meaning it cannot handle frost. Okra is best planted in Spring after all danger of frost has passed, or in the first part of Fall, before any danger of frost can occur. Okra can be enjoyed fried, pickled, or even raw.",
+    "GrowthZone": "7a",
+    "GrowSeason":"Spring"
   }
- ]
+]
