@@ -31,8 +31,7 @@
                        WidthRequest="160"/>
             </Border>
 
-            <Label Style="{StaticResource LargeLabel}" 
-                   Grid.Row="1"
+            <Label Grid.Row="1"
                    TextColor="White"
                    FontAttributes="Bold"
                    Text="{Binding Plant.Name}" 
@@ -40,9 +39,9 @@
                    Margin="0,0,0,8"/>
             
             <VerticalStackLayout Grid.Row="2" Padding="10" Spacing="10">
-                <Label Style="{StaticResource MediumLabel}" Text="{Binding Plant.Description}" />
-                <Label Style="{StaticResource SmallLabel}" Text="{Binding Plant.GrowSeason, StringFormat='Location: {0}'}" />
-                <Label Style="{StaticResource SmallLabel}" Text="{Binding Plant.GrowthZone, StringFormat='Population: {0}'}" />
+                <Label Text="{Binding Plant.Description}" />
+                <Label Text="{Binding Plant.GrowSeason, StringFormat='Location: {0}'}" />
+                <Label Text="{Binding Plant.GrowthZone, StringFormat='Population: {0}'}" />
             </VerticalStackLayout>
 
         </Grid>

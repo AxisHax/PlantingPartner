@@ -18,12 +18,11 @@
                         Grid.ColumnSpan="2">
             <CollectionView.EmptyView>
                 <StackLayout Padding="100">
-                    <Image
-                            HorizontalOptions="Center"
-                            Source="nodata.png"
-                            HeightRequest="160"
-                            WidthRequest="160"
-                            VerticalOptions="Center"/>
+                    <Label TextColor="Black"
+                           FontAttributes="Bold"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="CenterAndExpand"
+                           Text="There are no plants that match the search criteria."/>
                 </StackLayout>
             </CollectionView.EmptyView>
             <CollectionView.ItemTemplate>
